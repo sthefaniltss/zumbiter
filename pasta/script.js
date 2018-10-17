@@ -6,6 +6,7 @@ $("#buttonSubmit").click( function(event){
 });
 
 function insertTweet (){
-  
-
+  $("#tweets").prepend(`
+    <p id="newTweet"> ${$("#tweet").val()} </p>
+    `)
 }
